@@ -1,13 +1,12 @@
 <template>
-
     <div class="h-main-container">
         <img alt="Vue logo" src="../assets/logo.png">
         <div class="h-right-side">
-            <a href="">About us</a>
+            <router-link to="/about">About us</router-link>
             <a href="">Demands</a>
             <a href="">Resources</a>
             <a href="">News & Events</a>
-            <ButtonCTA cta="Take Action" />
+            <ButtonCTA cta="Hello" link="" state="default" />
         </div>
     </div>
 

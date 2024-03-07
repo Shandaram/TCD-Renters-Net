@@ -1,12 +1,15 @@
 <template>
   <HeaderMain />
-  <!-- homepage  -->
-
+  <!-- we will have our different pages rendered here  -->
+  <div id="app">
+    <router-view></router-view>
+  </div>
+  
 </template>
 
 <script>
-
 import HeaderMain from './components/HeaderMain.vue'
+
 export default {
   name: 'App',
   components: {
