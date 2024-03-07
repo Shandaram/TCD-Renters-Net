@@ -1,19 +1,22 @@
 <template>
-  <HeaderMain />
-  <!-- we will have our different pages rendered here  -->
   <div id="app">
+    <HeaderMain />
+    <!-- we will have our different pages rendered here  -->
     <router-view></router-view>
+    <FooterMain />
   </div>
-  
+
 </template>
 
 <script>
 import HeaderMain from './components/HeaderMain.vue'
+import FooterMain from './components/FooterMain.vue'
 
 export default {
   name: 'App',
   components: {
-    HeaderMain
+    HeaderMain,
+    FooterMain
   }
 }
 </script>
@@ -37,6 +40,10 @@ a {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+
+  height: 100vh;
 
 }
 </style>

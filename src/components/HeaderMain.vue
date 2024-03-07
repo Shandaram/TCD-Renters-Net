@@ -1,13 +1,18 @@
 <template>
     <div class="h-main-container">
-        <img alt="Vue logo" src="../assets/logo.png">
+        <router-link to="/"><img alt="Vue logo" src="../assets/logo.png"></router-link>
         <div class="h-right-side">
             <router-link to="/about">About us</router-link>
-            <a href="">Demands</a>
-            <a href="">Resources</a>
-            <a href="">News & Events</a>
-            <ButtonCTA cta="Hello" link="" state="default" />
+            <router-link to="/demands">Demands</router-link>
+            <router-link to="/resources">Resources</router-link>
+            <router-link to="/news">News & Events</router-link>
+            <ButtonCTA cta="Take Action" link="/actions" state="default" />
         </div>
+    </div>
+    <div class="bread-crumbs">
+        <p>Home</p>
+        <p>→</p>
+        <p>Page</p>
     </div>
 
 </template>
@@ -23,7 +28,6 @@ export default {
 </script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
 a {
     text-decoration: none;
 }
@@ -32,7 +36,7 @@ a {
     width: 90vw;
     display: grid;
     padding: 0.5vw 5vw;
-    border-bottom: 1px var( --dark-grey-color) solid;
+    border-bottom: 1px var(--dark-grey-color) solid;
     grid-template-columns: auto 2fr;
     grid-template-rows: auto;
     grid-gap: 10vw;
@@ -52,4 +56,16 @@ a {
     grid-template-rows: auto;
     grid-gap: 5vw;
 }
+.bread-crumbs {
+    width: 90vw;
+    display: grid;
+    padding: 0 5vw;
+    border-bottom: 1px var(--dark-grey-color) solid;
+    grid-template-columns: auto auto auto 2fr;
+    grid-template-rows: auto;
+    grid-gap: 2vw;
+    align-items: center;
+
+}
+
 </style>
