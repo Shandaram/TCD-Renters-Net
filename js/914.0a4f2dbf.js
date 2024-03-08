@@ -1,2 +1,0 @@
-"use strict";(self["webpackChunkrentersnet"]=self["webpackChunkrentersnet"]||[]).push([[914],{6914:function(e,n,r){r.r(n),r.d(n,{default:function(){return l}});var t=r(6768);const a={class:"h-main-container"},u=(0,t.Lk)("h1",null,"Homepage",-1),s=[u];function c(e,n,r,u,c,o){return(0,t.uX)(),(0,t.CE)("div",a,s)}var o={name:"HomePage"},i=r(1241);const f=(0,i.A)(o,[["render",c]]);var l=f}}]);
-//# sourceMappingURL=914.0a4f2dbf.js.map
