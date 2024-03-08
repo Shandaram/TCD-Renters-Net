@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 
 const routes = [
   {
-    path: "/",
+    path: "/rentersnet",
     component: () => import("./views/HomePage.vue"),
   },
   {
