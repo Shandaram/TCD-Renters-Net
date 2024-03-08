@@ -1,0 +1,20 @@
+
+@font-face {
+    font-family: 'TASA-Display-black';
+    src: url('./fonts/TASAOrbiterDisplay-Black.otf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'TASA-Display-medium';
+    src: url('./fonts/TASAOrbiterDisplay-Medium.otf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'TASA-Text-bold';
+    src: url('./fonts/TASAOrbiterText-Bold.otf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'TASA-Text-regular';
+    src: url('./fonts/TASAOrbiterText-Regular.otf') format('truetype');
+  }

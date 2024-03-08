@@ -1,5 +1,5 @@
 <template>
-    <div class="h-main-container">
+      <div class="main-container">
         <h1>Resources page</h1>
     </div>
 

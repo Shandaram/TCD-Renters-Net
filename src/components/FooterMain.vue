@@ -35,8 +35,6 @@ a {
     align-items: center;
     background-color: var(--black-color);
     color: var(--background-color);
-    position: absolute;
-    bottom:0;
 }
 
 .h-right-side {

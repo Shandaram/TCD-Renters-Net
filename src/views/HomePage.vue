@@ -1,14 +1,25 @@
 <template>
-    <div class="h-main-container">
-
-        <h1>Homepage</h1>
-    </div>
+    <div class="main-container">
+       <LandingText title="TCD Renters’ Solidarity Network" 
+       :state="shouldShowSubtitle ? 'show' : 'hide'"
+                    
+           txt="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Risus pretium quam vulputate dignissim suspendisse. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Risus pretium quam" />
+   </div>
 
 </template>
 <script>
+import LandingText from '../components/LandingText.vue';
 
 export default {
-    name: 'HomePage',
-   
+   name: 'HomePage',
+   components: {
+       LandingText
+   },
+   data() {
+        return {
+            shouldShowSubtitle: false 
+        };
+    }
+  
 }
 </script>

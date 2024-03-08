@@ -1,8 +1,8 @@
 :root {
-    --background-color: #FCFBF8;
-    --black-color: #27262b;
-    --light-red-color: #D40015;
-    --dark-red-color: #A6191C;
-    --dark-grey-color: #5D5A66;
-  }
-  
+  --black-color: #27262b;
+  --dark-grey-color: #5d5a66;
+  --light-grey-color: #f2f0ed;
+  --background-color: #fcfbf8;
+  --light-red-color: #d40015;
+  --dark-red-color: #a6191c;
+}

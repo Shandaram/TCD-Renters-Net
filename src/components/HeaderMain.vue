@@ -36,7 +36,7 @@ a {
     width: 90vw;
     display: grid;
     padding: 0.5vw 5vw;
-    border-bottom: 1px var(--dark-grey-color) solid;
+    border-bottom: 1px var(--light-grey-color) solid;
     grid-template-columns: auto 2fr;
     grid-template-rows: auto;
     grid-gap: 10vw;
@@ -45,7 +45,7 @@ a {
 
 .h-main-container img {
     justify-self: start;
-    width: 80px;
+    width: 70px;
 }
 
 .h-right-side {
@@ -59,13 +59,13 @@ a {
 .bread-crumbs {
     width: 90vw;
     display: grid;
-    padding: 0 5vw;
-    border-bottom: 1px var(--dark-grey-color) solid;
+    padding: 0.3vw 5vw;
+    border-bottom: 1px var(--light-grey-color) solid;
     grid-template-columns: auto auto auto 2fr;
     grid-template-rows: auto;
     grid-gap: 2vw;
     align-items: center;
-
+    line-height: 0 !important;
 }
 
 </style>

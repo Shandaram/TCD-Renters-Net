@@ -23,27 +23,39 @@ export default {
 
 <style>
 @import '@/assets/colors.css';
+@import "@/assets/fonts.css";
 
 body {
   background-color: var(--background-color);
   color: var(--black-color);
   font-size: 18px;
   margin: 0;
+  font-family: 'TASA-Text-regular';
+  line-height: 145%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 a {
   color: var(--black-color);
 }
 
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
+.main-container {
+  margin: 3vw 5vw;
+}
 
-  height: 100vh;
+h1 {
+  font-family: 'TASA-Display-black';
+  font-size: 71px;
+  line-height: 100%;
+
+}
+
+h2 {
+
+  font-family: 'TASA-Display-medium';
+  font-size: 41px;
+  line-height: 70%;
 
 }
 </style>
