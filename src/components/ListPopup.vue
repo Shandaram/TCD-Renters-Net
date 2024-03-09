@@ -2,15 +2,23 @@
     <div class="h-main-container">
       <div class="l-left-side">
         <!-- Use v-for to dynamically generate demand items -->
-        <h3 class="list-item" v-for="(demand, index) in demands" :key="index" @click="selectedDemand = index" :class="{ active: index === selectedDemand }">{{ demand }}</h3>
-    </div>
+        <div  class="list-item" v-for="(demand, index) in demands" :key="index" @click="selectedDemand = index" :class="{ active: index === selectedDemand }">
+          <span><font-awesome-icon :icon="index === selectedDemand ? ['fas', 'fa-file'] : ['far', 'fa-file']" /></span>
+          <h3 >{{ demand }}  </h3>
+          <!-- <span><font-awesome-icon icon="fa-solid fa-plus" /></span> -->
+          <!-- <span><font-awesome-icon icon="fa-solid fa-minus" /></span> -->
+        </div>
+     
+
+      </div>
       <div class="r-left-side">
+
         <p class="line">{{ demandText }}</p>
       </div>
     </div>
   </template>
-  
-  <script>
+  <script> 
+
   export default {
   name: 'ListPopup',
   props: {
@@ -48,6 +56,10 @@ a {
     padding-bottom: 1vw;
     border-bottom: 1px var(--light-grey-color) solid;
     cursor: pointer;
+    display: grid;
+    grid-template-columns: auto 1fr   ;
+    grid-gap: 2vw;
+    align-items: center;
 }
 .list-item:hover {
     color: var(--light-red-color);
@@ -55,12 +67,12 @@ a {
 .h-main-container {
     justify-self: end;
     display: grid;
-    grid-template-columns: auto auto   ;
-    grid-template-rows: auto;
+    grid-template-columns: 1.2fr 1fr   ;
     grid-gap: 5vw;
 }
 
 .active {
   color: var(--light-red-color);
+  font-family: 'TASA-Display-medium';
 }
 </style>

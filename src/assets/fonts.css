@@ -10,6 +10,11 @@
   }
 
   @font-face {
+    font-family: 'TASA-Display-regular';
+    src: url('./fonts/TASAOrbiterDisplay-Regular.otf') format('truetype');
+  }
+
+  @font-face {
     font-family: 'TASA-Text-bold';
     src: url('./fonts/TASAOrbiterText-Bold.otf') format('truetype');
   }

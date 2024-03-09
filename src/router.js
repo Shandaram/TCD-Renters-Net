@@ -1,36 +1,55 @@
 import { createRouter, createWebHistory } from "vue-router";
+import AboutPage from "./views/AboutPage.vue";
+import HomePage from "./views/HomePage.vue";
+import NewsPage from "./views/NewsPage.vue";
+import ActionPage from "./views/ActionPage.vue";
+import ResourcesPage from "./views/ResourcesPage.vue";
+import ListPopup from "./components/ListPopup.vue";
 
 const routes = [
-  {
-    path: "/rentersnet",
-    component: () => import("./views/HomePage.vue"),
-  },
+  { path: "/rentersnet", redirect: "/" },
   {
     path: "/about",
-    component: () => import("./views/AboutPage.vue"),
+    name: "AboutPage",
+    component: AboutPage,
+    children: [
+      { path: 'demands', component: ListPopup },
+    ],
   },
   {
-    path: "/demands",
-    component: () => import("./views/DemandsPage.vue"),
+    path: "/",
+    name: "HomePage",
+    component: HomePage,
   },
   {
     path: "/news",
-    component: () => import("./views/NewsPage.vue"),
+    name: "NewsPage",
+    component: NewsPage,
   },
   {
     path: "/actions",
-    component: () => import("./views/ActionPage.vue"),
+    name: "ActionPage",
+    component: ActionPage,
   },
   {
     path: "/resources",
-    component: () => import("./views/ResourcesPage.vue"),
-  }
-
+    name: "ResourcesPage",
+    component: ResourcesPage,
+  },
 ];
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory(process.env.BASE_URL),
   routes,
+  scrollBehavior(to, from, savedPosition) {
+    if (to.hash) {
+      return { el: to.hash, behavior: 'smooth' };
+    } else if (savedPosition) {
+      return savedPosition;
+    } else {
+      return { top: 0, behavior: 'smooth' };
+    }
+  }
 });
 
 export default router;

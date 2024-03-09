@@ -3,7 +3,7 @@
         <router-link to="/rentersnet"><img alt="Vue logo" src="../assets/logo.png"></router-link>
         <div class="h-right-side">
             <router-link to="/about">About us</router-link>
-            <router-link to="/about">Demands</router-link>
+            <router-link to="/about/demands">Demands</router-link>
             <router-link to="/resources">Resources</router-link>
             <router-link to="/news">News & Events</router-link>
             <ButtonCTA cta="Take Action" link="/actions" state="default" />

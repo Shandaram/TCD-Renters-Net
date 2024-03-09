@@ -10,11 +10,15 @@ WE ORGANISE DIRECT ACTIONS TO MEET OUR DEMANDS. THIS INCLUDES PROTESTS, PETITION
         </div>
         <h1>Demands</h1>
         <!-- second block -->
-        <div class="l-block">
+        <div id="demands" class="l-block">
             <ListPopup :demands="demands" :defaultDemand="defaultDemand" :demandTexts="demandTexts" />
         </div>
         <h1>Join us!</h1>
-
+        <!-- fourth block -->
+        <h1>FAQ</h1>
+        <div class="l-block">
+            <ListPopup :demands="demands" :defaultDemand="defaultDemand" :demandTexts="demandTexts" />
+        </div>
     </div>
 
 </template>
@@ -35,7 +39,7 @@ export default {
             demandTexts: [
                 `The policy of not letting students sign in guests after 11pm at Halls, and 12am on campus disproportionately limits the rights and autonomy of student residents. It is a paternalistic, dangerous and hypocritical policy.
       Firstly, it is paternalistic because it does not treat students as adults capable of making their own choices.
-      Secondly, it is dangerous because someone might need to sleep at a resident’s place, such as in cases where they miss their public transport and cannot get home.Rejecting them from a safe place to sleep is unacceptable.It makes no sense in terms of controlling numbers because overnight guests can simply come on campus before midnight - as such, in any case, this policy is ineffective and only serves to put us in danger.
+      Secondly, it is dangerous because someone might need to sleep at a resident’s place, such as in cases where they miss their public transport and cannot get home. Rejecting them from a safe place to sleep is unacceptable. It makes no sense in terms of controlling numbers because overnight guests can simply come on campus before midnight - as such, in any case, this policy is ineffective and only serves to put us in danger.
       Thirdly, it is hypocritical because the same policy does not apply to staff living on campus, such as lecturers or Fellows. 
       The issue has been raised by multiple student residents over a number of years, and as such we immediately call on College to change the policy to allow student residents to sign in guests any time.`,
                 'A 30% reduction in campus rents is essential, considering 85% of students find current housing costs unaffordable, which not only exacerbates financial stress but could also detrimentally impact their academic performance and mental well-being. Lowering rents would make higher education more accessible, enabling a wider range of students to focus on their studies without the added burden of excessive housing costs, thereby fostering a more inclusive and supportive academic environment.',
@@ -48,3 +52,10 @@ export default {
     }
 };
 </script>
+
+<style scoped>
+h1 {
+    text-align: center;
+    padding-top: 5vw;
+}
+</style>

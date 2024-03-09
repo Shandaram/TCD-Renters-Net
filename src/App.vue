@@ -8,6 +8,7 @@
 
 </template>
 
+
 <script>
 import HeaderMain from './components/HeaderMain.vue'
 import FooterMain from './components/FooterMain.vue'
@@ -18,7 +19,7 @@ export default {
     HeaderMain,
     FooterMain
   }
-}
+};
 </script>
 
 <style>
@@ -69,8 +70,8 @@ h2 {
 
 h3 {
 
-font-family: 'TASA-Display-medium';
-font-size: 31px;
+font-family: 'TASA-Display-regular';
+font-size: 28px;
 line-height: 115%;
 
 }
