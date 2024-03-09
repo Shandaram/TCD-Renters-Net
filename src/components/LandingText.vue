@@ -3,7 +3,7 @@
         <div class="l-left-side">
          <h1>{{ title }}</h1>
          <h2 :class="state">{{ subTitle }}</h2>
-         <p>{{ txt }}</p>
+         <p class="line">{{ txt }}</p>
         </div>
 
 
@@ -53,10 +53,11 @@ a {
 }
 
 p {
-    border-left: 2px var(--black-color) solid;
-    padding-left: 1vw;
+
     text-align: left;
 }
+
+
 
 .show {
     display: block;

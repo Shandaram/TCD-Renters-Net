@@ -41,21 +41,37 @@ a {
 }
 
 .main-container {
-  margin: 3vw 5vw;
+  margin: 3vw 9vw;
+}
+.l-block {
+  display: flex;
+  justify-content: space-between;
+}
+.line {
+  border-left: 2px var(--black-color) solid;
+    padding-left: 1vw;
 }
 
 h1 {
   font-family: 'TASA-Display-black';
   font-size: 71px;
   line-height: 100%;
-
+   
 }
 
 h2 {
 
   font-family: 'TASA-Display-medium';
   font-size: 41px;
-  line-height: 70%;
+  line-height: 115%;
+
+}
+
+h3 {
+
+font-family: 'TASA-Display-medium';
+font-size: 31px;
+line-height: 115%;
 
 }
 </style>

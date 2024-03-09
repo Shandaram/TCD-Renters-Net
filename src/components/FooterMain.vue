@@ -28,7 +28,7 @@ a {
 .f-main-container {
     width: 90vw;
     display: grid;
-    padding: 3vw 5vw;
+    padding: 3vw 9vw;
     grid-template-columns: auto 1.5fr;
     grid-template-rows: auto;
     grid-gap: 10vw;

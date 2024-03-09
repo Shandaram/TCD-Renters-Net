@@ -1,9 +1,9 @@
 <template>
     <div class="h-main-container">
-        <router-link to="/"><img alt="Vue logo" src="../assets/logo.png"></router-link>
+        <router-link to="/rentersnet"><img alt="Vue logo" src="../assets/logo.png"></router-link>
         <div class="h-right-side">
             <router-link to="/about">About us</router-link>
-            <router-link to="/demands">Demands</router-link>
+            <router-link to="/about">Demands</router-link>
             <router-link to="/resources">Resources</router-link>
             <router-link to="/news">News & Events</router-link>
             <ButtonCTA cta="Take Action" link="/actions" state="default" />
@@ -32,10 +32,14 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    color: var(--light-red-color);
+}
+
 .h-main-container {
-    width: 90vw;
+    width: 82vw;
     display: grid;
-    padding: 0.5vw 5vw;
+    padding: 0.5vw 9vw;
     border-bottom: 1px var(--light-grey-color) solid;
     grid-template-columns: auto 2fr;
     grid-template-rows: auto;
@@ -59,7 +63,7 @@ a {
 .bread-crumbs {
     width: 90vw;
     display: grid;
-    padding: 0.3vw 5vw;
+    padding: 0.3vw 9vw;
     border-bottom: 1px var(--light-grey-color) solid;
     grid-template-columns: auto auto auto 2fr;
     grid-template-rows: auto;
