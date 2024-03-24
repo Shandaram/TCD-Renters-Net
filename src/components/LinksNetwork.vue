@@ -62,7 +62,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .tagsBtn {
   width: 240px;
   height: 40px;

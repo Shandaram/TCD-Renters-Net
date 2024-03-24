@@ -42,7 +42,6 @@ a {
 }
 
 .l-left-side {
-
     display: grid;
 
     grid-template-columns: auto;
@@ -56,9 +55,6 @@ p {
 
     text-align: left;
 }
-
-
-
 .show {
     display: block;
 }

@@ -43,9 +43,29 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .image {
   width: 100%;
   margin-top: 44px;
+}
+.tagsBtn {
+  width: 240px;
+  height: 40px;
+  border-width: 1px;
+  border-radius: 15px;
+  border-color: var(--black-color);
+  background-color: var(--background-color);
+  font-size: 18px;
+}
+
+.tag-box {
+  display:flex;
+  gap:38px;
+}
+
+.active {
+  background-color: var(--light-red-color);
+  color: var(--background-color);
+  border: none;
 }
 </style>
