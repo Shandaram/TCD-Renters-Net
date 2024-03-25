@@ -17,7 +17,7 @@ WE ORGANISE DIRECT ACTIONS TO MEET OUR DEMANDS. THIS INCLUDES PROTESTS, PETITION
         <!-- fourth block -->
         <h1>FAQ</h1>
         <div class="l-block">
-            <ListPopup :demands="demands" :defaultDemand="defaultDemand" :demandTexts="demandTexts" />
+            <ListPopup :demands="questions" :defaultDemand="defaultDemand" :demandTexts="answers" />
         </div>
     </div>
 
@@ -47,7 +47,17 @@ export default {
                 'Implementing rent refunds for days affected by serious maintenance issues is a fair and equitable policy that holds housing providers accountable while ensuring students are not financially disadvantaged due to circumstances beyond their control. This approach incentivizes prompt and effective resolution of maintenance problems, improving living conditions and student satisfaction. ',
                 'Offering free laundry facilities instead of charging 7.5 euros per wash and dry with Circuit Laundry can significantly alleviate financial strain on students, who often operate on tight budgets. Making laundry a basic, included amenity in student housing not only supports students financial well-being but also ensures equitable access to essential services, fostering a more inclusive and supportive living environment on campus.',
                 'Better communication and advance announcements of staff visits are essential for respecting students privacy and schedules, minimizing disruptions, and fostering a more respectful campus environment.'
-            ]
+            ],
+            questions: ['What?', 'Where?', 'Why?', 'Rent Refunds for Each Day with Serious Maintenance Issues', 'Free Laundry Machines', 'Staff Visits To Be Communicated and Announced'],
+            answers: [
+                `k,djbs,hk.dple student residents over a number of years, and as such we immediately call on College to change the policy to allow student residents to sign in guests any time.`,
+                'A 30% reduction in campus rents is essential, considering 85% of students find current housing costs unaffordable, which not only exacerbates financial stress but could also detrimentally impact their academic performance and mental well-being. Lowering rents would make higher education more accessible, enabling a wider range of students to focus on their studies without the added burden of excessive housing costs, thereby fostering a more inclusive and supportive academic environment.',
+                'The issue of accessible rooms being more expensive poses a significant concern for people with disabilities, highlighting an inequality that contradicts principles of inclusivity and equal opportunity. Charging higher rates for accessible rooms inadvertently penalizes individuals for their physical needs, exacerbating the financial burden on those who may already face additional expenses related to their disabilities. Therefore, we are asking to cap the prices for people with disabilities at the Pearse Street rents. ',
+                'Implementing rent refunds for days affected by serious maintenance issues is a fair and equitable policy that holds housing providers accountable while ensuring students are not financially disadvantaged due to circumstances beyond their control. This approach incentivizes prompt and effective resolution of maintenance problems, improving living conditions and student satisfaction. ',
+                'Offering free laundry facilities instead of charging 7.5 euros per wash and dry with Circuit Laundry can significantly alleviate financial strain on students, who often operate on tight budgets. Making laundry a basic, included amenity in student housing not only supports students financial well-being but also ensures equitable access to essential services, fostering a more inclusive and supportive living environment on campus.',
+                ' '
+            ],
+
         }
     }
 };
