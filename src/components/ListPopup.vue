@@ -5,8 +5,6 @@
         <div  class="list-item" v-for="(demand, index) in demands" :key="index" @click="selectedDemand = index" :class="{ active: index === selectedDemand }">
           <span><font-awesome-icon :icon="index === selectedDemand ? ['fas', 'fa-file'] : ['far', 'fa-file']" /></span>
           <h3 >{{ demand }}  </h3>
-          <!-- <span><font-awesome-icon icon="fa-solid fa-plus" /></span> -->
-          <!-- <span><font-awesome-icon icon="fa-solid fa-minus" /></span> -->
         </div>
      
 
