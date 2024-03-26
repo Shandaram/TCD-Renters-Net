@@ -1,13 +1,13 @@
 <template>
       <div class="main-container">
-        <h1>Resources page</h1>
+        <h1>Rent in Dublin</h1>
         <imageTags/>
        
         <h2>Cost of Living Calculator</h2>
         <div class="calculator">
             <div class="cal"><costofLiving/></div>
             <div class="info">
-                <p class="info-title">How it works?</p>
+                <!-- <FontAwesomeIcon :icon="circle-exclamation" style="color: #a6191c;" /><p class="info-title">How it works?</p> -->
                  <p>
                     Aliquam etiam erat velit scelerisque in. Dolor magna eget est lorem ipsum dolor. Tincidunt tortor aliquam nulla facilisi cras fermentum odio. Cras semper auctor neque vitae tempus. Pretium viverra suspendisse potenti nullam ac tortor. Placerat orci nulla pellentesque dignissim enim sit amet venenatis urna.
                     </p>
@@ -15,7 +15,9 @@
                     </p>
                     <p>Sem viverra aliquet eget sit amet tellus. Bibendum at varius vel pharetra vel turpis nunc. 
                     </p>
-                <p class="footnote-sml">More accurate calculation <span class="arr"> ↗ </span></p>
+                <a href="https://www.numbeo.com/cost-of-living/calculator.jsp">
+                    <p class="footnote-sml">More accurate calculation<span class="arr"> ↗ </span></p> 
+                    </a>
             </div>
         </div>
        
@@ -29,6 +31,8 @@
 import LinksNetwork from "@/components/LinksNetwork.vue";
 import imageTags from "@/components/imageTags.vue";
 import costofLiving from "@/components/costofLiving.vue";
+// import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+// import { byPrefixAndName } from '@awesome.me/kit-KIT_CODE/icons'
 
 export default {
     name: 'ResourcesPage',
@@ -73,6 +77,11 @@ h2{
 .footnote-sml{
     color:var(--black-color);
     margin-top: 30px;
+    
+}
+
+a{
+    text-decoration: none;
     text-align: end;
 }
 

@@ -35,9 +35,9 @@ export default {
       
       questions:{
         'What type of accommodation do you plan to live in?':[
-          { text:'On Campus', cost:1000 },
+          { text:'On Campus', cost: 1000 },
           { text:'Digs', cost: 700 },
-          { text:'Student Accommodation', cost:1100 },
+          { text:'Student Accommodation', cost: 1100 },
           { text: "Room in Shared Apartment", cost: 900 },
           { text: "Bed in Shared room", cost: 500 },
           { text: "Studio", cost: 1500}
@@ -87,7 +87,7 @@ export default {
 .questions {
   display: flex;
   flex-direction: column;
-  gap:31px;
+  gap:30px;
   font-family:'TASA-Text-regular';
   color: var(--black-color);
 }
@@ -107,9 +107,10 @@ select {
   font-size: 18px;
 }
 
-option
+option, 
 .footnote-sml {
   font-size: 18px;
+  background: var(--background-color);
 }
 
 label {
@@ -135,6 +136,7 @@ label {
   color: var(--dark-grey-color);
   margin: 0;
   padding-top:10px;
+  
 }
 
 .total{
